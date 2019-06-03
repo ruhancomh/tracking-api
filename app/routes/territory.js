@@ -1,0 +1,15 @@
+import express from "express"
+import TerritoryController from "../controllers/territory"
+
+const router = express.Router()
+const controller = new TerritoryController()
+
+router
+  .route("/")
+  .get( (req, res, next) =>  controller.list(req, res, next))
+
+router
+  .route("/add")
+  .get( (req, res, next) =>  controller.add(req, res, next)) // that should be a POST
+
+module.exports = router

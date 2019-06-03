@@ -1,0 +1,32 @@
+{
+  "name": "gps-tracking",
+  "version": "1.0.0",
+  "description": "GPS car tracking",
+  "main": "app.js",
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "needle": "^2.4.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "gps",
+    "api"
+  ]
+}
