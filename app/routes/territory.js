@@ -9,7 +9,7 @@ router
   .get( (req, res, next) =>  controller.list(req, res, next))
 
 router
-  .route("/add")
-  .get( (req, res, next) =>  controller.add(req, res, next)) // that should be a POST
+  .route("/")
+  .post( (req, res, next) =>  controller.add(req, res, next))
 
 module.exports = router

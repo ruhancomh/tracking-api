@@ -1,7 +1,10 @@
+import dotenv from "dotenv"
+dotenv.config()
+
 const app = require("./app/config/express")()
 
-app.listen(8000, function(){
-  console.log(`Server is running on port 8000`)
+app.listen(process.env.SERVER_PORT, function(){
+  console.log(`Server is running on port ${process.env.SERVER_PORT}`)
 })
 
 module.exports = app
